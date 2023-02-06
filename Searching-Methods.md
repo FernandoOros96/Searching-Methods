@@ -26,7 +26,7 @@ La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve par
 3. Insertar uno de los nodos no visitados (nodo adyacente al que se encuentra hasta arriba de la pila) a la pila. 
 4. Repetir el paso 3 hasta que se hayan visitado todos los nodos adyacentes al nodo que este hasta arriba de la pila.  
 5. Cuando no haya más nodos adyacentes, quitar el nodo de hasta arriba de la pila. 
-6. Repetir el paso 3,4 y 5 hasta que la pila no contenga ningún elemento. 
+6. Repetir el paso 3, 4 y 5 hasta que la pila no contenga ningún elemento. 
 
 
 ## Búsqueda en Amplitud o Anchura (BFS) 
