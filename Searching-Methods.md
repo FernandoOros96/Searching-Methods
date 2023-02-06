@@ -109,6 +109,19 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
   <img src="images/pre-order.png" width="250" height="250">
 </p>
 
+### Aplicaciones de la Búsqueda en Profundidad 
+
+* Solucionar laberintos o puzzles que cuenten con una única solución  
+
+* Se puede emplear para detectar si existen ciclos en un grafo 
+
+* Analizar redes para comprobar si un grafo es bipartito 
+
+* Para encontrar el camino a un nodo específico 
+
+* Es complemento del ordenamiento topologico de un grafo 
+
+
 ### Ejemplo de Búsqueda en Profundidad 
 
 Para el ejemplo de búsqueda en profundidad se empleó un grafo compuesto de 5 nodos. Por lo que, primero se declara una pila de tamaño equivalente al número total de nodos de la estructura de datos. Después, se selecciona un nodo como punto de inicio, en este caso se eligió el nodo número 1. Luego, se marca como visitado el nodo 1 y este se coloca en la pila. 
