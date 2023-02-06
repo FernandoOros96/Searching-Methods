@@ -96,25 +96,25 @@ Para el ejemplo de búsqueda en profundidad se empleó un grafo compuesto de 5 n
 Posteriormente, se analizan los nodos adyacentes (no visitados) a este. De modo que, el nodo dos se explora y es marcado. A continuación, este es agregado a la parte superior de la pila. Seguidamente, se observan los nodos adyacentes al nodo 2, siendo el nodo 5 el único aun no visitado. Por lo cual, este es marcado como recorrido e insertado a la pila. 
 
 <p align="center">
-  <img src="images/p2.png" width="350" height="250">
+  <img src="images/p2.png"  width="450" height="170">
 </p>
  
 Más adelante, se vuelven a revisar los nodos adyacentes, pero del nodo 5. Así, que se visita el nodo 3 y este se añade a la pila. Ulteriormente, se verifican los nodos adyacentes al nodo 3, pero al haber solo nodos ya visitados se extrae el elemento que se encuentra hasta arriba de la pila. Para nuevamente consultar por nodos adyacentes al nodo 5 que aún no hubieran sido visitados.  
 
 <p align="center">
-  <img src="images/p3.png" width="250" height="250">
+  <img src="images/p3.png"  width="450" height="170">
 </p>
 
 Por lo tanto, se marca el nodo 4 como visitado y es insertado en la pila. Por último, al no existir más nodos que recorrer se extrae el elemento superior de la pila que es 4.  
 
 <p align="center">
-  <img src="images/p4.png" width="350" height="250">
+  <img src="images/p4.png"  width="450" height="170">
 </p>
 
 De manera que, se continúan extrayendo elementos de la pila hasta que esta esté vacía. 
 
 <p align="center">
-  <img src="images/p5.png" width="350" height="250">
+  <img src="images/p5.png"  width="450" height="170">
 </p>
 
 ## Búsqueda en Amplitud o Anchura (BFS) 
