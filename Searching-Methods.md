@@ -284,7 +284,7 @@ En esta parte el codigo es iterado, es decir, se va a repetir, en este caso va a
 </p>
 
 Este es la solución, se debe insertar solve(1, Sol). Y dará el resultado de la búsqueda de profundidad.
-
+```pl
 s(a,b). 
 s(a,c). 
 s(b,d). 
@@ -297,7 +297,7 @@ s(e,j).
 
 goal(f).  
 goal(j). 
-
+```
 <p align="center">
   <img src="images/2dfs.png" width="400" height="550">
 </p>
