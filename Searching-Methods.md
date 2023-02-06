@@ -171,7 +171,13 @@ En caso de que se recorran todos los nodos y no encontremos solución, comenzare
 Repetimos los pasos 3, 4 y 5 mientras la cola tenga elementos. 
 
 ### Aplicaciones del Algoritmo BFS 
+<p align="left">
+  <img src="images/primary.png" width="400" height="300">
+</p>
 
+<p align="rigth">
+  <img src="images/rrss-servicios.png" width="400" height="300">
+</p>
 Redes sociales: En las redes sociales, podemos encontrar personas dentro de una distancia dada 'k' de una persona utilizando Breadth First Search hasta niveles 'k'.   
 
 Sistemas de navegación GPS: Breadth First Search se utiliza para encontrar todas las ubicaciones vecinas.   
@@ -221,106 +227,3 @@ De igual forma en esta imagen continuamos con el mismo proceso que el anterior, 
 Por último, en esta imagen observamos que nuestro algoritmo termina de verificar que efectivamente tomo el camino optimo y correcto. Ya que la lista queda vacía y obtuvo el mismo recorrido y llego al nodo que estaba buscando. Otro punto importante a destacar es la confirmación de que efecto a pesar de que los nodos puedan tener hijos no es necesario recorrerlos a todos para encontrar el mejor camino.  
 
 
-
-
-### Primero en profundidad (DFS)  
-
- • Poner en cola nodos en nodos en orden LIFO (último en entrar, primero en salir). Es decir, nodos utilizados como estructura de datos de pila para ordenar nodos.  
- • No puede terminar sin un "límite de profundidad", es decir, cortar la búsqueda por debajo de una profundidad fija D ("búsqueda de profundidad limitada")  
- •Tiempo exponencial, O(bd), pero solo espacio lineal, O(bd)  
-   
-
-### Complejidad  
-
-Se ve que cada vértice se lo mira a lo sumo una vez, y en una visita al nodo se lo agrega/saca de la pila, y se hacen operaciones de tiempo constante, por lo que tenemos O(V) tiempo para los vértices. Además, cada arista se ve también a lo sumo una vez, tomando O(E) tiempo. En total, la complejidad temporal es O(V+E), que en términos de grafos es óptimo.   
-
-La complejidad espacial es sencilla de ver. Tenemos el grafo que guarda una entrada por arista (en realidad dos, para la arista (u,v) guarda v en el vector de u y u en el vector de v). Luego, el arreglo de visitados tiene una variable por nodo, y en la pila (en el primer caso) a lo sumo están todos a la vez, una sola vez (si el nodo inicial es vecino de todos). Entonces la complejidad espacial también se ve que es O(V+E).  
-
-### Ventajas:  
-
--Puede encontrar soluciones largas rápidamente si tiene suerte (¡y soluciones cortas lentamente si tiene mala suerte!)  
-
--DFS consume poco espacio de memoria, , ya que solo se almacenan los nodos en la ruta actual. Esto contrasta con la búsqueda primero en amplitud, donde se deben almacenar todos los árboles que se han generado hasta ahora.  
--Llegará al nodo de destino en un período de tiempo menor que BFS si atraviesa el camino correcto.  
--Puede encontrar una solución sin examinar gran parte de la búsqueda porque podemos obtener la solución deseada en el primer intento.  
--Encuentra el elemento distante más grande (desde el vértice de origen) en menos tiempo.  
--La búsqueda primero en profundidad puede encontrar una solución sin examinar gran parte del espacio de búsqueda. Esto contrasta con la búsqueda primero en amplitud en la que todas las partes del árbol deben examinarse hasta el nivel n antes de que se puedan examinar los nodos en el nivel n + i. Esto es particularmente significativo si existen muchas soluciones aceptables. La búsqueda en profundidad puede detenerse cuando se encuentra uno de ellos.  
-
-### Desventajas:  
-
-•No completo (con o sin detección de ciclo, y con o sin profundidad de corte)  
--Cuando la búsqueda llega a un callejón sin salida, solo puede retroceder un nivel a la vez, incluso si el "problema" ocurre debido a una mala elección del operador cerca de la parte superior del árbol. Por lo tanto, solo el "retroceso cronológico".  
--Puede no encontrar la solución óptima al problema.  
--Puede quedar atrapado en la búsqueda de un camino.  
--En la búsqueda en profundidad “cada nodo tiene dos tiempos asociados: el tiempo de descubrimiento y el tiempo de finalización” (Kravitz, David & Lafferty, 1997). Si el parámetro de búsqueda es grande (es decir, una gran cantidad de nodos), entonces "el almacenamiento requerido para todos estos tiempos se vuelve" rápidamente inmanejable.  
--A veces, los estados también pueden entrar en bucles infinitos.  
--Puede encontrar una solución subóptima (una que sea más profunda o más costosa que la mejor solución)  
-
-### Amplitud primero (BFS)  
-
- •Encolar nodos en nodos en orden FIFO (primero en entrar, primero en salir).  
- •Completo  
- •Óptimo (es decir, admisible) si todos los operadores tienen el mismo costo. De lo contrario, no es óptimo, pero encuentra la solución con la longitud de ruta más corta.  
- • Complejidad exponencial de tiempo y espacio, O(bd), donde d es la profundidad de la solución y b es el factor de ramificación (es decir, el número de hijos) en cada nodo 
- •Tomará mucho tiempo encontrar soluciones con una gran cantidad de pasos porque primero se deben considerar todas las posibilidades de longitudes más cortas  
- –Un árbol de búsqueda completo de profundidad d donde cada nodo no hoja tiene b hijos, tiene un total de 1 + b + b2 + ... + bd = (b(d+1) - 1)/(b-1) nodos  
- –Para un árbol de búsqueda completo de profundidad 12, donde cada nodo de profundidad 0, ..., 11 tiene 10 hijos y cada nodo de profundidad 12 tiene 0 hijos, hay 1 + 10 + 100 + 1000 + ... + 1012 = (1013 - 1)/9 = O(1012) nodos en el árbol de búsqueda completo. Si BFS se expande 1000 nodos/seg y cada nodo usa 100 bytes de almacenamiento, BFS tardará 35 años en ejecutarse en el peor de los casos, ¡y usará 111 terabytes de memoria!  
-  
-### Complejidad  
-
-Suponiendo que explorar los vecinos de un nodo tiene un costo proporcional a su grado (por ejemplo, como ocurre al usar listas de adyacencia), todas estas versiones del algoritmo tienen una complejidad O(n+m). Esto es porque cada nodo es procesado cuando es rosa, y un nodo es rosa durante únicamente un paso. Por lo tanto, se trabaja con un nodo explorando sus vecinos una única vez en todo el algoritmo. Si explorar los vecinos de un nodo cuesta proporcional a su grado, el costo total del algoritmo, además de un O(n) fijo para crear el arreglo de visitados y similares estructuras, tendrá un costo igual a la suma de todos los grados, que es 2m. Por lo tanto el total es O(n+m), proporcional al total de nodos y ejes del grafo, lo cual es muy bueno.   
-
-Si se utilizara matriz de adyacencia, el costo de buscar los vecinos de un nodo sería siempre O(n), sin importar su grado. En este caso, el costo de explorar cada uno de los n nodos sería siempre n, y en total el costo sería O(n^2). Muchas veces es perfectamente razonable un costo de O(n^2), y en estos casos se puede utilizar perfectamente BFS con matriz de adyacencia.  
-
- 
-
-### Ventajas:  
-
--Encuentra la solución mínima en caso de múltiples caminos, encontrando el camino más corto entre vértices, ya que busca nivel por nivel.  
--Una de las estrategias de búsqueda más simples.  
--Completo. Si hay una solución, BFS está garantizado para encontrarla.  
--Si hay múltiples soluciones, entonces se encontrará una solución mínima.  
--El algoritmo es óptimo (es decir, admisible) si todos los operadores tienen el mismo costo. De lo contrario, la búsqueda primero en amplitud encuentra una solución con la ruta de acceso más corta.  
--Encuentra la meta más cercana en menos tiempo  
-- BFS no sufre ningún problema potencial de bucle infinito  
-- BFS funcionará bien si el espacio de búsqueda es pequeño. Funciona mejor si el estado objetivo se encuentra en la parte superior izquierda del árbol.  
-
-### Desventajas:  
-
--BFS consume gran espacio de memoria. Su complejidad temporal es mayor.  
--Requiere la generación y el almacenamiento de un árbol cuyo tamaño es exponencial a la profundidad del nodo objetivo menos profundo.  
--El algoritmo de búsqueda primero en amplitud no se puede usar de manera efectiva a menos que el espacio de búsqueda sea bastante pequeño.  
--Todos los vértices conectados deben almacenarse en la memoria. Entonces consume más memoria  
-- BFS es una búsqueda "ciega", cuando el espacio de búsqueda es grande, el rendimiento de la búsqueda será deficiente en comparación con otras búsquedas heurísticas.  
--BFS funcionará relativamente mal en relación con el algoritmo de búsqueda primero en profundidad si el estado objetivo se encuentra en la parte inferior del árbol. BFS siempre encontrará la ruta más corta si el peso en los enlaces es uniforme.   
-- BFS necesita más memoria en comparación con DFS.  
-
-### References 
-
-ALGORITMO DE BÚSQUEDA: BREADTH FIRST SEARCH. (2016, 3 noviembre). Algorithms and More.  
-
- 	https://jariasf.wordpress.com/2012/02/27/algoritmo-de-busqueda-breadth-first-search/ 
-
-Búsqueda en amplitud (BFS): implementación iterativa y recursiva. (s. f.). 
-
- https://www.techiedelight.com/es/breadth-first-search/ 
-
-Cambal, H. (s. f.). Tipos de búsqueda en inteligencia artificial.  
-
-https://es.slideshare.net/hendavidcambarahona/tipos-de-bsqueda-24524005 
-
-Difference between Breadth Search (BFS) and Deep Search (DFS). (2020, 25 mayo). Encora. https://www.encora.com/es/blog/dfs-vs-bfs 
-
-Dr. Himani Mittal. (2021, June 25). depth first search in prolog [Video]. YouTube. https://www.youtube.com/watch?v=t1vJYqoK3ec 
-
-Depth First Search Algorithm Prolog. (2014, November 21). Stack Overflow. https://stackoverflow.com/questions/27065774/depth-first-search-algorithm-prolog 
-
-GeeksforGeeks. (2023, 27 enero). Applications of Breadth First Traversal. https://www.geeksforgeeks.org/applications-of-breadth-first-traversal/ 
-
-algoritmos-oia:grafos:dfs [OIA-Wiki]. (s. f.). http://wiki.oia.unsam.edu.ar/algoritmos-oia/grafos/dfs 
-
-GeeksforGeeks. (2023, 6 febrero). Graph Data Structure And Algorithms. https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/ 
-
-algoritmos-oia:grafos:bfs [OIA-Wiki]. (s. f.). http://wiki.oia.unsam.edu.ar/algoritmos-oia/grafos/bfs?s[]=bfs 
-
- 
