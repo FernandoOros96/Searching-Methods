@@ -239,4 +239,7 @@ De igual forma en esta imagen continuamos con el mismo proceso que el anterior, 
 </p>
 Por último, en esta imagen observamos que nuestro algoritmo termina de verificar que efectivamente tomo el camino optimo y correcto. Ya que la lista queda vacía y obtuvo el mismo recorrido y llego al nodo que estaba buscando. Otro punto importante a destacar es la confirmación de que efecto a pesar de que los nodos puedan tener hijos no es necesario recorrerlos a todos para encontrar el mejor camino.  
 
+#Ejemplo de DFS en Prolog.
+
+
 
