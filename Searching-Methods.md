@@ -26,7 +26,7 @@ La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve par
 ### Proceso para implementar la Búsqueda en Profundidad 
 
 <p align="center">
-  <img src="images/Depth-First-Search.gif" width="300" height="300">
+  <img src="images/Depth-First-Search.gif" width="250" height="250">
 </p>
 
 1. Declarar una pila de tamaño igual al número total de nodos del árbol o grafo. 
