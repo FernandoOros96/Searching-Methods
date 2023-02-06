@@ -53,6 +53,22 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 
 3. Luego, se recorre el hijo derecho y se retrocede para recorrer el subárbol derecho. 
 
+### Post-orden (después) 
+
+1. Se comienza por la raíz y se busca el hijo izquierdo que se encuentre a mayor profundidad para recorrerlo. (subárbol izquierdo) 
+
+2. Luego, se recorre a sus vecinos derechos. 
+
+3. Por último, se recorre el nodo raíz de estos. 
+
+### Pre-orden (antes) 
+
+1. En este primero se recorre el nodo raíz. 
+
+2. Posteriormente, se recorre el hijo izquierdo y se continúa buscando hijos izquierdos a partir de este.  
+
+3. Cuando se termina de recorrer el subárbol izquierdo, se visitan todos los hijos derechos. 
+
 
 ## Búsqueda en Amplitud o Anchura (BFS) 
 
