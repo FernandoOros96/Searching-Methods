@@ -128,7 +128,7 @@ Es un algoritmo con el que recorremos y/o buscamos elementos de un grafo. La bú
 
 ### Proceso para implementar la Búsqueda en Profundidad 
 <p align="center">
-  <img src="images/Bbfs-gif.gif" width="400" height="300">
+  <img src="images/bfs-gif.gif" width="400" height="300">
 </p>
 
 
