@@ -51,6 +51,10 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 
 ### In-orden (en medio) 
 
+<p align="center">
+  <img src="images/inorder.png" width="250" height="250">
+</p>
+
 1. Se empieza por la raíz y se observa si se tiene un hijo izquierdo. En caso de que lo tenga este se continúa revisando hasta ya no encontrar nodos hijo del lado izquierdo y se marca como visitado el último.  
 
 2. Después, cuando no haya más subárboles izquierdos se recorre el nodo raíz del último nodo recorrido. 
@@ -65,6 +69,10 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 
 3. Por último, se recorre el nodo raíz de estos. 
 
+<p align="center">
+  <img src="images/postorder.png" width="250" height="250">
+</p>
+
 ### Pre-orden (antes) 
 
 1. En este primero se recorre el nodo raíz. 
@@ -73,7 +81,9 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 
 3. Cuando se termina de recorrer el subárbol izquierdo, se visitan todos los hijos derechos. 
 
-
+<p align="center">
+  <img src="images/pre-order.png" width="250" height="250">
+</p>
 ## Búsqueda en Amplitud o Anchura (BFS) 
 
 Es un algoritmo con el que recorremos y/o buscamos elementos de un grafo. La búsqueda de ancho se utiliza para aquellos algoritmos donde es crítico elegir el mejor camino posible en cada momento del recorrido. Este algoritmo de grafos es muy útil en diversos problemas de programación. Por ejemplo, halla la ruta más corta cuando el peso entre todos los nodos es 1, cuando se requiere llegar con un movimiento de caballo de un punto a otro con el menor número de pasos, cuando se desea transformar algo un numero o cadena en otro realizando ciertas operaciones como suma producto, pero teniendo en cuenta que no sea muy grande el proceso de conversión, o para salir de un laberinto con el menor número de pasos, etc. Podrán aprender a identificarlos con la práctica. 
