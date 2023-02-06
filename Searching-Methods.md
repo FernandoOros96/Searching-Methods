@@ -5,6 +5,18 @@
 
 La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve para recorrer y visitar todos los vértices de un grafo o árbol. De modo que, se inicia con un nodo raíz (puede ser cualquiera) y se explora cada uno de los nodos adyacentes a este buscando llegar tan lejos como sea posible a través de las ramas.  En otras palabras, se elige un nodo para comenzar, este se marca como visitado y se mueve a un nodo adyacente no visitado. Después, se repite este mismo proceso hasta que se hayan visitado todos los nodos adyacentes y en caso de que no se encuentren más se opta por el backtracking, por lo que se revisan otros nodos no visitados.  
 
+### Características 
+
+Cualquier implementación del algoritmo de Búsqueda en profundidad categoriza los nodos en dos estados: visitado y no visitado. 
+
+Este algoritmo de búsqueda tiene el propósito de recorres todos los nodos de la estructura de datos evitando los ciclos, por lo tanto, se marcan los nodos ya visitados.  
+
+Se emplea el backtracking debido a que cuando se están explorando los nodos adyacentes y ya no se encuentran más, este retrocede a nodos ya visitados para hallar nuevos nodos (vecinos) que no se hayan visitado.  
+
+Para su implementación de utiliza la estructura de datos conocido como pila. 
+
+Útil para la representación de problemas cuya solución se encuentre en lo más profundo del árbol/grafo. 
+
 
 
 ## Búsqueda en Amplitud o Anchura (BFS) 
