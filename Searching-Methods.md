@@ -239,7 +239,71 @@ De igual forma en esta imagen continuamos con el mismo proceso que el anterior, 
 </p>
 Por último, en esta imagen observamos que nuestro algoritmo termina de verificar que efectivamente tomo el camino optimo y correcto. Ya que la lista queda vacía y obtuvo el mismo recorrido y llego al nodo que estaba buscando. Otro punto importante a destacar es la confirmación de que efecto a pesar de que los nodos puedan tener hijos no es necesario recorrerlos a todos para encontrar el mejor camino.  
 
-#Ejemplo de DFS en Prolog.
 
+## Ejemplo de DFS en Prolog.
 
+<p align="center">
+  <img src="images/dfs1.png" width="700" height="300">
+</p>
 
+s(1,2).
+s(1,3).
+s(1,4).
+s(2,5).
+s(3,5).
+s(4,5).
+goal(5).
+
+Se creo el ejemplo visto anteriormente en prolog, se necesita el nodo inicial, el goal node y el path que es una collecion que representara un grafo.
+
+member(X,[X|_]).
+member(X,[_| Tail]) :- member(X, Tail).
+
+En member solo ayudara a saber los valores del grafo.
+
+solve(Node, Solution):-
+  depthfirst( [],Node, Solution).
+  
+depthfirst(Path, Node, [Node|Path]):-
+  goal(Node).
+  
+En esta parte del codigo parará si el goal node ya fue encontrar 
+
+depthfirst(Path, Node, Sol):- 
+
+  s(Node, Node1), 
+
+  not(member(Node1,Path)), 
+
+  depthfirst([Node|Path], Node1, Sol). 
+
+En esta parte el codigo es iterado, es decir, se va a repetir, en este caso va a seleccionar un node y el node siguiente (node1), si no fue visitado y no es el goal node esta pasa ser el node principal y el siguiente node será node1, así sucesivamente.
+
+<p align="center">
+  <img src="images/sol1.png" width="700" height="300">
+</p>
+
+Este es la solución, se debe insertar solve(1, Sol). Y dará el resultado de la búsqueda de profundidad.
+
+s(a,b). 
+s(a,c). 
+s(b,d). 
+s(b,e). 
+s(c,f). 
+s(c,g). 
+s(d,h). 
+s(e,i). 
+s(e,j). 
+
+goal(f).  
+goal(j). 
+
+<p align="center">
+  <img src="images/2 dfs.png" width="700" height="300">
+</p>
+
+Se creó otro ejemplo en prolog con dos goal nodes f y j, siguiente el mismo paso anterior, encontrará el camino del goal f y goal j como se muestra en la imagen de abajo. Le damos en solve el node de inicio y Sol. 
+
+<p align="center">
+  <img src="images/sol2.png" width="700" height="300">
+</p>
