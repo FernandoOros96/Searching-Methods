@@ -9,7 +9,11 @@
 
 ## Búsqueda en Profundidad (DFS) 
 
-La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve para recorrer y visitar todos los vértices de un grafo o árbol. De modo que, se inicia con un nodo raíz (puede ser cualquiera) y se explora cada uno de los nodos adyacentes a este buscando llegar tan lejos como sea posible a través de las ramas.  En otras palabras, se elige un nodo para comenzar, este se marca como visitado y se mueve a un nodo adyacente no visitado. Después, se repite este mismo proceso hasta que se hayan visitado todos los nodos adyacentes y en caso de que no se encuentren más se opta por el backtracking, por lo que se revisan otros nodos no visitados.  
+La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve para recorrer y visitar todos los vértices de un grafo o árbol. De modo que, se inicia con un nodo raíz (puede ser cualquiera) y se explora cada uno de los nodos adyacentes a este buscando llegar tan lejos como sea posible a través de las ramas.  En otras palabras, se elige un nodo para comenzar, este se marca como visitado y se mueve a un nodo adyacente no visitado. Después, se repite este mismo proceso hasta que se hayan visitado todos los nodos adyacentes y en caso de que no se encuentren más se opta por el backtracking, por lo que se revisan otros nodos no visitados. 
+<p align="center">
+  <img src="images/DFS.png" width="250" height="250">
+</p>
+
 
 ### Características 
 
