@@ -280,7 +280,7 @@ depthfirst(Path, Node, Sol):-
 En esta parte el codigo es iterado, es decir, se va a repetir, en este caso va a seleccionar un node y el node siguiente (node1), si no fue visitado y no es el goal node esta pasa ser el node principal y el siguiente node será node1, así sucesivamente.
 
 <p align="center">
-  <img src="images/sol1.png" width="600" height="200">
+  <img src="images/sol1.png" width="800" height="200">
 </p>
 
 Este es la solución, se debe insertar solve(1, Sol). Y dará el resultado de la búsqueda de profundidad.
@@ -299,11 +299,11 @@ goal(f).
 goal(j). 
 
 <p align="center">
-  <img src="images/2dfs.png" width="500" height="200">
+  <img src="images/2dfs.png" width="400" height="500">
 </p>
 
 Se creó otro ejemplo en prolog con dos goal nodes f y j, siguiente el mismo paso anterior, encontrará el camino del goal f y goal j como se muestra en la imagen de abajo. Le damos en solve el node de inicio y Sol. 
 
 <p align="center">
-  <img src="images/sol2.png" width="600" height="200">
+  <img src="images/sol2.png" width="800" height="200">
 </p>
