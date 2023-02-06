@@ -172,11 +172,11 @@ Repetimos los pasos 3, 4 y 5 mientras la cola tenga elementos.
 
 ### Aplicaciones del Algoritmo BFS 
 <p align="left">
-  <img src="images/primary.png" width="400" height="300">
+  <img src="images/primary.png" width="500" height="300">
 </p>
 
-<p align="rigth">
-  <img src="images/rrss-servicios.png" width="400" height="300">
+<p align="right">
+  <img src="images/rrss-servicios.png" width="500" height="300">
 </p>
 Redes sociales: En las redes sociales, podemos encontrar personas dentro de una distancia dada 'k' de una persona utilizando Breadth First Search hasta niveles 'k'.   
 
