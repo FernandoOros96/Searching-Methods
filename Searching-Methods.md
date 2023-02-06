@@ -11,7 +11,7 @@
 
 La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve para recorrer y visitar todos los vértices de un grafo o árbol. De modo que, se inicia con un nodo raíz (puede ser cualquiera) y se explora cada uno de los nodos adyacentes a este buscando llegar tan lejos como sea posible a través de las ramas.  En otras palabras, se elige un nodo para comenzar, este se marca como visitado y se mueve a un nodo adyacente no visitado. Después, se repite este mismo proceso hasta que se hayan visitado todos los nodos adyacentes y en caso de que no se encuentren más se opta por el backtracking, por lo que se revisan otros nodos no visitados. 
 <p align="center">
-  <img src="images/DFS.png" width="350" height="250">
+  <img src="images/DFS.png" width="300" height="200">
 </p>
 
 
@@ -70,7 +70,7 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 3. Por último, se recorre el nodo raíz de estos. 
 
 <p align="center">
-  <img src="images/postorder.png" width="250" height="250">
+  <img src="images/postorder.png" width="350" height="250">
 </p>
 
 ### Pre-orden (antes) 
@@ -82,7 +82,7 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 3. Cuando se termina de recorrer el subárbol izquierdo, se visitan todos los hijos derechos. 
 
 <p align="center">
-  <img src="images/pre-order.png" width="250" height="250">
+  <img src="images/pre-order.png" width="350" height="250">
 </p>
 
 ### Ejemplo de Búsqueda en Profundidad 
@@ -90,13 +90,13 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 Para el ejemplo de búsqueda en profundidad se empleó un grafo compuesto de 5 nodos. Por lo que, primero se declara una pila de tamaño equivalente al número total de nodos de la estructura de datos. Después, se selecciona un nodo como punto de inicio, en este caso se eligió el nodo número 1. Luego, se marca como visitado el nodo 1 y este se coloca en la pila. 
 
 <p align="center">
-  <img src="images/p1.png" width="250" height="250">
+  <img src="images/p1.png" width="350" height="250">
 </p>
 
 Posteriormente, se analizan los nodos adyacentes (no visitados) a este. De modo que, el nodo dos se explora y es marcado. A continuación, este es agregado a la parte superior de la pila. Seguidamente, se observan los nodos adyacentes al nodo 2, siendo el nodo 5 el único aun no visitado. Por lo cual, este es marcado como recorrido e insertado a la pila. 
 
 <p align="center">
-  <img src="images/p2.png" width="250" height="250">
+  <img src="images/p2.png" width="350" height="250">
 </p>
  
 Más adelante, se vuelven a revisar los nodos adyacentes, pero del nodo 5. Así, que se visita el nodo 3 y este se añade a la pila. Ulteriormente, se verifican los nodos adyacentes al nodo 3, pero al haber solo nodos ya visitados se extrae el elemento que se encuentra hasta arriba de la pila. Para nuevamente consultar por nodos adyacentes al nodo 5 que aún no hubieran sido visitados.  
@@ -108,13 +108,13 @@ Más adelante, se vuelven a revisar los nodos adyacentes, pero del nodo 5. Así,
 Por lo tanto, se marca el nodo 4 como visitado y es insertado en la pila. Por último, al no existir más nodos que recorrer se extrae el elemento superior de la pila que es 4.  
 
 <p align="center">
-  <img src="images/p4.png" width="250" height="250">
+  <img src="images/p4.png" width="350" height="250">
 </p>
 
 De manera que, se continúan extrayendo elementos de la pila hasta que esta esté vacía. 
 
 <p align="center">
-  <img src="images/p5.png" width="250" height="250">
+  <img src="images/p5.png" width="350" height="250">
 </p>
 
 ## Búsqueda en Amplitud o Anchura (BFS) 
