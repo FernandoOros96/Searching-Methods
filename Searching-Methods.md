@@ -14,18 +14,27 @@ La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve par
 ### Características 
 
 * Cualquier implementación del algoritmo de Búsqueda en profundidad categoriza los nodos en dos estados: visitado y no visitado. 
+
 * Este algoritmo de búsqueda tiene el propósito de recorres todos los nodos de la estructura de datos evitando los ciclos, por lo tanto, se marcan los nodos ya visitados.  
+
 * Se emplea el backtracking debido a que cuando se están explorando los nodos adyacentes y ya no se encuentran más, este retrocede a nodos ya visitados para hallar nuevos nodos (vecinos) que no se hayan visitado.  
+
 * Para su implementación de utiliza la estructura de datos conocido como pila. 
+
 * Útil para la representación de problemas cuya solución se encuentre en lo más profundo del árbol/grafo. 
 
 ### Proceso para implementar la Búsqueda en Profundidad 
 
 1. Declarar una pila de tamaño igual al número total de nodos del árbol o grafo. 
+
 2. Seleccionar un nodo como punto de inicio e insertarlo a la pila. 
+
 3. Insertar uno de los nodos no visitados (nodo adyacente al que se encuentra hasta arriba de la pila) a la pila. 
+
 4. Repetir el paso 3 hasta que se hayan visitado todos los nodos adyacentes al nodo que este hasta arriba de la pila.  
+
 5. Cuando no haya más nodos adyacentes, quitar el nodo de hasta arriba de la pila. 
+
 6. Repetir el paso 3, 4 y 5 hasta que la pila no contenga ningún elemento. 
 
 ### Estrategias para implementar la Búsqueda en Profundidad 
