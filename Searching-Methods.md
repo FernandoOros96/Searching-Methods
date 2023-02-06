@@ -90,7 +90,7 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 Para el ejemplo de búsqueda en profundidad se empleó un grafo compuesto de 5 nodos. Por lo que, primero se declara una pila de tamaño equivalente al número total de nodos de la estructura de datos. Después, se selecciona un nodo como punto de inicio, en este caso se eligió el nodo número 1. Luego, se marca como visitado el nodo 1 y este se coloca en la pila. 
 
 <p align="center">
-  <img src="images/p1.png" width="550" height="250">
+  <img src="images/p1.png" width="450" height="150">
 </p>
 
 Posteriormente, se analizan los nodos adyacentes (no visitados) a este. De modo que, el nodo dos se explora y es marcado. A continuación, este es agregado a la parte superior de la pila. Seguidamente, se observan los nodos adyacentes al nodo 2, siendo el nodo 5 el único aun no visitado. Por lo cual, este es marcado como recorrido e insertado a la pila. 
