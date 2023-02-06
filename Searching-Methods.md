@@ -70,7 +70,7 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 3. Por último, se recorre el nodo raíz de estos. 
 
 <p align="center">
-  <img src="images/postorder.png" width="350" height="250">
+  <img src="images/postorder.png" width="250" height="250">
 </p>
 
 ### Pre-orden (antes) 
@@ -82,7 +82,7 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 3. Cuando se termina de recorrer el subárbol izquierdo, se visitan todos los hijos derechos. 
 
 <p align="center">
-  <img src="images/pre-order.png" width="350" height="250">
+  <img src="images/pre-order.png" width="550" height="250">
 </p>
 
 ### Ejemplo de Búsqueda en Profundidad 
