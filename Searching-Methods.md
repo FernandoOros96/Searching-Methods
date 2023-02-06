@@ -114,7 +114,7 @@ Por lo tanto, se marca el nodo 4 como visitado y es insertado en la pila. Por ú
 De manera que, se continúan extrayendo elementos de la pila hasta que esta esté vacía. 
 
 <p align="center">
-  <img src="images/p5.png"  width="450" height="170">
+  <img src="images/p5.png"  width="450" height="270">
 </p>
 
 ## Búsqueda en Amplitud o Anchura (BFS) 
