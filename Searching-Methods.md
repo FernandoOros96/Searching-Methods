@@ -245,7 +245,7 @@ Por último, en esta imagen observamos que nuestro algoritmo termina de verifica
 <p align="center">
   <img src="images/dfs1.png" width="500" height="200">
 </p>
-
+```
 s(1,2).
 s(1,3).
 s(1,4).
@@ -253,22 +253,22 @@ s(2,5).
 s(3,5).
 s(4,5).
 goal(5).
-
+```
 Se creo el ejemplo visto anteriormente en prolog, se necesita el nodo inicial, el goal node y el path que es una collecion que representara un grafo.
-
+```
 member(X,[X|_]).
 member(X,[_| Tail]) :- member(X, Tail).
-
+```
 En member solo ayudara a saber los valores del grafo.
-
+```
 solve(Node, Solution):-
   depthfirst( [],Node, Solution).
   
 depthfirst(Path, Node, [Node|Path]):-
   goal(Node).
-  
+```  
 En esta parte del codigo parará si el goal node ya fue encontrar 
-
+```
 depthfirst(Path, Node, Sol):- 
 
   s(Node, Node1), 
@@ -276,7 +276,7 @@ depthfirst(Path, Node, Sol):-
   not(member(Node1,Path)), 
 
   depthfirst([Node|Path], Node1, Sol). 
-
+```
 En esta parte el codigo es iterado, es decir, se va a repetir, en este caso va a seleccionar un node y el node siguiente (node1), si no fue visitado y no es el goal node esta pasa ser el node principal y el siguiente node será node1, así sucesivamente.
 
 <p align="center">
