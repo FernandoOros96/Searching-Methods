@@ -28,6 +28,18 @@ La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve par
 5. Cuando no haya más nodos adyacentes, quitar el nodo de hasta arriba de la pila. 
 6. Repetir el paso 3, 4 y 5 hasta que la pila no contenga ningún elemento. 
 
+### Estrategias para implementar la Búsqueda en Profundidad 
+
+Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de hacerlo, las cuales se pueden categorizar según el orden en que se visitan los nodos o la dirección. Es por eso, que la Búsqueda en Profundidad es aplicable por medio de tres estrategias: in-orden (en medio), post-orden (después) y pre-orden (antes). 
+
+### In-orden (en medio) 
+
+1. Se empieza por la raíz y se observa si se tiene un hijo izquierdo. En caso de que lo tenga este se continúa revisando hasta ya no encontrar nodos hijo del lado izquierdo y se marca como visitado el último.  
+
+2. Después, cuando no haya más subárboles izquierdos se recorre el nodo raíz del último nodo recorrido. 
+
+3. Luego, se recorre el hijo derecho y se retrocede para recorrer el subárbol derecho. 
+
 
 ## Búsqueda en Amplitud o Anchura (BFS) 
 
