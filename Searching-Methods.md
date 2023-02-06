@@ -1,8 +1,32 @@
 # Searching Methods
 
 
+## Búsqueda no informada
 
 
+Como el nombre 'Búsqueda no informada' significa que la máquina sigue ciegamente el algoritmo sin considerar el costo de alcanzar la meta, la probabilidad de encontrar una solución o si la solución obtenida es correcta o incorrecta. Estos algoritmos tienen una naturaleza de fuerza bruta y no tienen información adicional sobre el espacio de búsqueda; la única información que tienen es sobre cómo atravesar o visitar los nodos en el árbol.
+
+Por lo tanto, los algoritmos de búsqueda no informados también se denominan algoritmos de búsqueda ciega y son los conceptos básicos de los algoritmos de búsqueda en IA.
+
+Los algoritmos de búsqueda no informada a menudo son fáciles de implementar y comprender, y los dos enfoques básicos difieren en cuanto a si verifica un objetivo cuando se genera un nodo o cuando se expande.
+Algunos ejemplos de estos algoritmos son:
+
+1. Depth First Search (DFS)
+2. Breadth-First Search(BFS)
+3. Uniform Cost Search(UCS) 
+4. Depth Limited Search(DLS) 
+5. Iterative Deepening Depth First Search(IDDFS)
+6. Bidirectional Search(BS)
+
+Todos estos ejemplos tienen diferentes complejidades de tiempo y espacio que los hacen más adecuados para diferentes problemas específicos, sin embargo, solo explicaremos los primeros dos ejemplos (DFS y BFS)
+
+### * Algoritmos no informados vs informados.
+
+Los algoritmos informados tienen información sobre el estado objetivo que ayuda a una búsqueda más eficiente. Esta información se obtiene mediante una función que estima qué tan cerca está un estado del estado objetivo. La búsqueda informada en IA es un tipo de algoritmo de búsqueda que utiliza información adicional para guiar el proceso de búsqueda, lo que permite una resolución de problemas más eficiente en comparación con los algoritmos de búsqueda no informados.
+
+Esta información puede ser en forma de heurística, estimaciones de costos u otros datos relevantes para priorizar qué estados expandir y explorar.
+
+Los algoritmos de búsqueda no informados a menudo se utilizan como punto de partida para algoritmos de búsqueda informados más complejos o como una forma de explorar el espacio de búsqueda en problemas simples. Sin embargo, en problemas complejos con grandes espacios de búsqueda, los algoritmos de búsqueda desinformados pueden ser ineficientes y conducir a un aumento exponencial en el número de estados explorados.
 
 
 
@@ -164,7 +188,7 @@ Procesamiento de imágenes: BFS se puede usar para llenar una imagen con un colo
 <p align="center">
   <img src="images/Imagen1.png" width="700" height="300">
 </p>
-Para nuestro ejemplo ocupamos un grafo con 14 nodos, sin embargo, no fue necesario recorrer todos esto es lo más importante, em esta primera imagen podemos observar la creación de nuestra cola del tamaño de nuestros nodos. Comenzamos visitando nuestro nodo raíz que en este seleccionamos al de menor profundidad en este caso es A, lo visitamos y como no es el nodo que estamos buscando lo agregamos a nuestra cola, de igual forma podemos observar que expandimos los nodos vecinos de la raíz como observamos son D, F, G. 
+Para nuestro ejemplo ocupamos un grafo con 14 nodos, sin embargo, no fue necesario recorrer todos esto es lo más importante, em primer entra primera imagen podemos observar la creación de nuestra cola del tamaño de nuestros nodos. Comenzamos visitando nuestro nodo raíz que en este seleccionamos al de menor profundidad en este caso es A, lo visitamos y como no es el nodo que estamos buscando lo agregamos a nuestra cola, de igual forma podemos observar que expandimos los nodos vecinos de la raíz como observamos son D, F, G. 
 
 A continuación, observamos que pasamos al nodo D, como observamos se agrega a la lista ya que de igual forma no es la solución que estamos buscando. Por otra parte, aunque podemos observar los nodos hijos de D y F, los únicos que hemos expandido son los nodos de D ya que como explique este nodo ya fue visitado. 
 
