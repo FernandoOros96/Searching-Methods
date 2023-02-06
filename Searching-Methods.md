@@ -16,8 +16,9 @@
 
 Es un algoritmo con el que recorremos y/o buscamos elementos de un grafo. La búsqueda de ancho se utiliza para aquellos algoritmos donde es crítico elegir el mejor camino posible en cada momento del recorrido. Este algoritmo de grafos es muy útil en diversos problemas de programación. Por ejemplo, halla la ruta más corta cuando el peso entre todos los nodos es 1, cuando se requiere llegar con un movimiento de caballo de un punto a otro con el menor número de pasos, cuando se desea transformar algo un numero o cadena en otro realizando ciertas operaciones como suma producto, pero teniendo en cuenta que no sea muy grande el proceso de conversión, o para salir de un laberinto con el menor número de pasos, etc. Podrán aprender a identificarlos con la práctica. 
 
-Características 
-Proceso para implementar la Búsqueda en Profundidad 
+### Características 
+
+### Proceso para implementar la Búsqueda en Profundidad 
 
 Declarar una cola de tamaño igual al número de nodos que tenemos. 
 
@@ -33,7 +34,7 @@ En caso de que se recorran todos los nodos y no encontremos solución, comenzare
 
 Repetimos los pasos 3, 4 y 5 mientras la cola tenga elementos. 
 
-Aplicaciones del Algoritmo BFS 
+### Aplicaciones del Algoritmo BFS 
 
 Redes sociales: En las redes sociales, podemos encontrar personas dentro de una distancia dada 'k' de una persona utilizando Breadth First Search hasta niveles 'k'.   
 
@@ -47,7 +48,7 @@ Búsqueda de caminos: Podemos usar primero la amplitud o primero el recorrido tr
 
 Procesamiento de imágenes: BFS se puede usar para llenar una imagen con un color particular o para encontrar componentes conectados de píxeles. 
 
-Ejemplo Búsqueda en Amplitud o Anchura 
+### Ejemplo Búsqueda en Amplitud o Anchura 
 
 Para nuestro ejemplo ocupamos un grafo con 14 nodos, sin embargo, no fue necesario recorrer todos esto es lo más importante, em primer entra primera imagen podemos observar la creación de nuestra cola del tamaño de nuestros nodos. Comenzamos visitando nuestro nodo raíz que en este seleccionamos al de menor profundidad en este caso es A, lo visitamos y como no es el nodo que estamos buscando lo agregamos a nuestra cola, de igual forma podemos observar que expandimos los nodos vecinos de la raíz como observamos son D, F, G. 
 
