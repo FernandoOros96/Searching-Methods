@@ -1,4 +1,4 @@
-### Searching Methods
+# Searching Methods
 
 
 
