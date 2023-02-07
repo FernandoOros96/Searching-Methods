@@ -177,6 +177,13 @@ De manera que, se continúan extrayendo elementos de la pila hasta que esta est�
 Es un algoritmo con el que recorremos y/o buscamos elementos de un grafo. La búsqueda de ancho se utiliza para aquellos algoritmos donde es crítico elegir el mejor camino posible en cada momento del recorrido. Este algoritmo de grafos es muy útil en diversos problemas de programación. Por ejemplo, halla la ruta más corta cuando el peso entre todos los nodos es 1, cuando se requiere llegar con un movimiento de caballo de un punto a otro con el menor número de pasos, cuando se desea transformar algo un numero o cadena en otro realizando ciertas operaciones como suma producto, pero teniendo en cuenta que no sea muy grande el proceso de conversión, o para salir de un laberinto con el menor número de pasos, etc. Podrán aprender a identificarlos con la práctica. 
 
 ### Características 
+* Algoritmo Optimizador: Esta característica es una de las más importantes ya que hablamos de que el algoritmo aun cuando encuentra la solución, busca la forma de encontrar el camino más corto o la solución más optima. 
+
+* FIFO: Para que el algoritmo pueda recorrer de la mejor forma la gráfica o el grafo, sigue este procedimiento, por lo cual forma una cola en la cual añade la ruta que uso y por lo tanto es más fácil que optimice.  
+
+* Nodos Vecinos: A diferencia de DFS en este caso el algoritmo busca los vecinos del nodo que está analizando y avanza hacia estos, en este caso busca a los nodos de menor profundidad. 
+
+* Nodos Procesado/No procesados: La manera de clasificar de este algoritmo es muy similar a la de DFS de igual rectifica que el nodo se haya visitado o no, sin embargo, este algoritmo se haya expandido es por eso que los toma como procesado o no. 
 
 ### Proceso para implementar la Búsqueda en Anchura
 <p align="center">
