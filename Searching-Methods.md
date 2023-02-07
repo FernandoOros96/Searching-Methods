@@ -19,7 +19,7 @@
 - [Complejidad de DFS](#Complejidad)
 - [Ventajas de DFS](#Ventajas)
 - [Desventajas de DFS](#Desventajas)
-- [Ejemplo de BFS en Prolog](#Ejemplo-de-DFS-en-Prolog)
+- [Ejemplo de BFS en Prolog](#Ejemplo-de-BFS-en-Prolog)
 - [Complejidad de BFS](#Complejidad-de-BFS)
 - [Ventajas de BFS](#Ventajas-de-BFS)
 - [Desventajas de BFS](#Desventajas-de-BFS)
