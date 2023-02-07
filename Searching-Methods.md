@@ -12,7 +12,7 @@
     - [Ejemplo de Búsqueda en Profundidad](#Ejemplo-de-Búsqueda-en-Profundidad)
 - [Búsqueda en Amplitud o Anchura (BFS)](#Búsqueda-en-Amplitud-o-Anchura)
     - [Características de la Búsqueda en Amplitud](#Características)
-    - [Proceso para implementar la Búsqueda en Anchura](#Proceso-para-implementar-la-Búsqueda en-Anchura)
+    - [Proceso para implementar la Búsqueda en Anchura](#Proceso-para-implementar-la-Búsqueda-en-Anchura)
     - [Aplicaciones del Algoritmo BFS](#Aplicaciones-del-Algoritmo-BFS)
     - [Ejemplo Búsqueda en Amplitud o Anchura](#Ejemplo-Búsqueda-en-Amplitud-o-Anchura)
 - [Referencias](#referencias)
