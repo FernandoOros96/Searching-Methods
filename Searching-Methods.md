@@ -375,6 +375,38 @@ Si se utilizara matriz de adyacencia, el costo de buscar los vecinos de un nodo 
 -BFS funcionará relativamente mal en relación con el algoritmo de búsqueda primero en profundidad si el estado objetivo se encuentra en la parte inferior del árbol. BFS siempre encontrará la ruta más corta si el peso en los enlaces es uniforme.  
 - BFS necesita más memoria en comparación con DFS. 
  
+ ### Referencias:
+ 
+ ALGORITMO DE BÚSQUEDA: BREADTH FIRST SEARCH. (2016, 3 November). Algorithms and More. https://jariasf.wordpress.com/2012/02/27/algoritmo-de-busqueda-breadth-first-search/ 
+
+Búsqueda en amplitud (BFS): implementación iterativa y recursiva. (s. f.). https://www.techiedelight.com/es/breadth-first-search/
+
+Cambal, H. (s. f.). Tipos de búsqueda en inteligencia artificial. https://es.slideshare.net/hendavidcambarahona/tipos-de-bsqueda-24524005
+
+Difference between Breadth Search (BFS) and Deep Search (DFS). (2020, 25 May). Encora. https://www.encora.com/es/blog/dfs-vs-bfs
+
+Dr. Himani Mittal. (2021, June 25). depth first search in prolog [Video].
+YouTube. https://www.youtube.com/watch?v=t1vJYqoK3ec 
+
+Depth First Search Algorithm Prolog. (2014, November 21). Stack Overflow. https://stackoverflow.com/questions/27065774/depth-first-search-algorithm-prolog 
+
+GeeksforGeeks. (2023, 27 January). Applications of Breadth First Traversal. https://www.geeksforgeeks.org/applications-of-breadth-first-traversal/
+
+algoritmos-oia:grafos:dfs [OIA-Wiki]. (s. f.). http://wiki.oia.unsam.edu.ar/algoritmos-oia/grafos/dfs 
+
+GeeksforGeeks. (2023, 6 February). Graph Data Structure And Algorithms. https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/ 
+
+algoritmos-oia:grafos:bfs [OIA-Wiki]. (s. f.). http://wiki.oia.unsam.edu.ar/algoritmos-oia/grafos/bfs?s[]=bfs 
+
+Ravikiran, A. (2022, October 27). Your One-Stop Solution to Learn Depth-First Search(DFS) Algorithm From Scratch. simplilearn. https://www.simplilearn.com/tutorials/data-structure-tutorial/dfs-algorithm
+
+baeldung. (2022, November 25). Methods of Depth First Traversal and Their Applications. https://www.baeldung.com/cs/depth-first-traversal-methods#:~:text=In%20this%20tutorial%2C%20we'll,to%20any%20type%20of%20graph. 
+
+tutorialspoint. (2023). Data Structure - Depth First Traversal. https://www.tutorialspoint.com/data_structures_algorithms/depth_first_traversal.htm
+
+programiz. (n.d.). Depth First Search (DFS). https://www.programiz.com/dsa/graph-dfs
+
+
 
 
 
