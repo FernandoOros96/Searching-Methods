@@ -12,8 +12,9 @@
     - [Ejemplo de Búsqueda en Profundidad](#Ejemplo-de-Búsqueda-en-Profundidad)
 - [Búsqueda en Amplitud o Anchura (BFS)](#Búsqueda-en-Amplitud-o-Anchura)
     - [Características de la Búsqueda en Amplitud](#Características)
-    - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
-    - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
+    - [Proceso para implementar la Búsqueda en Anchura](#Proceso-para-implementar-la-Búsqueda en-Anchura)
+    - [Aplicaciones del Algoritmo BFS](#Aplicaciones-del-Algoritmo-BFS)
+    - [### Ejemplo Búsqueda en Amplitud o Anchura](#Ejemplo-Búsqueda-en-Amplitud-o-Anchura)
 - [Referencias](#referencias)
 
 ## Búsqueda no informada
@@ -205,7 +206,7 @@ En caso de que se recorran todos los nodos y no encontremos solución, comenzare
 
 Repetimos los pasos 3, 4 y 5 mientras la cola tenga elementos. 
 
-### Aplicaciones del Algoritmo BFS 
+### Aplicaciones del Algoritmo BFS
 <p align="left">
   <img src="images/primary.png" width="500" height="300">
 </p>
