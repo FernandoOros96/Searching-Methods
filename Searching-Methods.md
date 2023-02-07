@@ -6,11 +6,11 @@
     - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
     - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
     - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
-- [Búsqueda en profundidad](#Búsqueda-en-Profundidad-(DFS))
+- [Búsqueda en profundidad (DFS)](#Búsqueda-en-Profundidad)
     - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
     - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
     - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
-- [Búsqueda en Amplitud o Anchura (BFS) ](#Búsqueda-en-Amplitud-o-Anchura-(BFS))
+- [Búsqueda en Amplitud o Anchura](#Búsqueda-en-Amplitud-o-Anchura-(BFS))
     - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
     - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
     - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
@@ -46,7 +46,7 @@ Los algoritmos de búsqueda no informados a menudo se utilizan como punto de par
 
 
 
-## Búsqueda en Profundidad (DFS)
+## Búsqueda en Profundidad
 
 La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve para recorrer y visitar todos los vértices de un grafo o árbol. De modo que, se inicia con un nodo raíz (puede ser cualquiera) y se explora cada uno de los nodos adyacentes a este buscando llegar tan lejos como sea posible a través de las ramas.  En otras palabras, se elige un nodo para comenzar, este se marca como visitado y se mueve a un nodo adyacente no visitado. Después, se repite este mismo proceso hasta que se hayan visitado todos los nodos adyacentes y en caso de que no se encuentren más se opta por el backtracking, por lo que se revisan otros nodos no visitados. 
 <p align="center">
