@@ -46,7 +46,7 @@ Los algoritmos de búsqueda no informados a menudo se utilizan como punto de par
 
 
 
-## Búsqueda en Profundidad (DFS) 
+## Búsqueda en Profundidad (DFS)
 
 La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve para recorrer y visitar todos los vértices de un grafo o árbol. De modo que, se inicia con un nodo raíz (puede ser cualquiera) y se explora cada uno de los nodos adyacentes a este buscando llegar tan lejos como sea posible a través de las ramas.  En otras palabras, se elige un nodo para comenzar, este se marca como visitado y se mueve a un nodo adyacente no visitado. Después, se repite este mismo proceso hasta que se hayan visitado todos los nodos adyacentes y en caso de que no se encuentren más se opta por el backtracking, por lo que se revisan otros nodos no visitados. 
 <p align="center">
@@ -218,7 +218,7 @@ Búsqueda de caminos: Podemos usar primero la amplitud o primero el recorrido tr
 
 Procesamiento de imágenes: BFS se puede usar para llenar una imagen con un color particular o para encontrar componentes conectados de píxeles. 
 
-### Ejemplo Búsqueda en Amplitud o Anchura 
+### Ejemplo Búsqueda en Amplitud o Anchura
 <p align="center">
   <img src="images/Imagen1.png" width="700" height="300">
 </p>
