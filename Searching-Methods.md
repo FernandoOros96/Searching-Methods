@@ -1,5 +1,20 @@
 # Searching Methods
 
+## Contenido
+
+- [Búsqueda no informada](#Búsqueda-no-informada)
+    - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
+    - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
+    - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
+- [Búsqueda en profundidad](#Búsqueda-en-Profundidad-(DFS))
+    - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
+    - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
+    - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
+- [Búsqueda en Amplitud o Anchura (BFS) ](#Búsqueda-en-Amplitud-o-Anchura-(BFS))
+    - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
+    - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
+    - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
+- [Referencias](#referencias)
 
 ## Búsqueda no informada
 
