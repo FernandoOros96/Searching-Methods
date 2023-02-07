@@ -3,13 +3,13 @@
 ## Contenido
 
 - [Búsqueda no informada](#Búsqueda-no-informada)
-    - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
-    - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
-    - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
+    - [Algoritmos no informados vs informados](#Algoritmos-no-informados-vs-informadose)
 - [Búsqueda en profundidad (DFS)](#Búsqueda-en-Profundidad)
-    - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
-    - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
-    - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
+    - [Características de la Búsqueda en Profundidad](#Características-de-la-Búsqueda-en-Profundidad)
+    - [Proceso para implementar la Búsqueda en Profundidad](#Proceso-para-implementar-la-Búsqueda-en-Profundidad)
+    - [Estrategias para implementar la Búsqueda en Profundidad](#Estrategias-para-implementar-la-Búsqueda-en-Profundidad)
+    - [Aplicaciones de la Búsqueda en Profundidad](#Aplicaciones-de-la-Búsqueda-en-Profundidad)
+    - [Ejemplo de Búsqueda en Profundidad](#Ejemplo-de-Búsqueda-en-Profundidad)
 - [Búsqueda en Amplitud o Anchura (BFS)](#Búsqueda-en-Amplitud-o-Anchura)
     - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
     - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
@@ -35,7 +35,7 @@ Algunos ejemplos de estos algoritmos son:
 
 Todos estos ejemplos tienen diferentes complejidades de tiempo y espacio que los hacen más adecuados para diferentes problemas específicos, sin embargo, solo explicaremos los primeros dos ejemplos (DFS y BFS)
 
-### Algoritmos no informados vs informados.
+### Algoritmos no informados vs informados
 
 Los algoritmos informados tienen información sobre el estado objetivo que ayuda a una búsqueda más eficiente. Esta información se obtiene mediante una función que estima qué tan cerca está un estado del estado objetivo. La búsqueda informada en IA es un tipo de algoritmo de búsqueda que utiliza información adicional para guiar el proceso de búsqueda, lo que permite una resolución de problemas más eficiente en comparación con los algoritmos de búsqueda no informados.
 
@@ -54,7 +54,7 @@ La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve par
 </p>
 
 
-### Características 
+### Características de la Búsqueda en Profundidad
 
 * Cualquier implementación del algoritmo de Búsqueda en profundidad categoriza los nodos en dos estados: visitado y no visitado. 
 
@@ -66,7 +66,7 @@ La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve par
 
 * Útil para la representación de problemas cuya solución se encuentre en lo más profundo del árbol/grafo. 
 
-### Proceso para implementar la Búsqueda en Profundidad 
+### Proceso para implementar la Búsqueda en Profundidad
 
 <p align="center">
   <img src="images/Depth-First-Search.gif" width="250" height="250">
@@ -84,7 +84,7 @@ La búsqueda en profundidad es un algoritmo de búsqueda recursivo que sirve par
 
 6. Repetir el paso 3, 4 y 5 hasta que la pila no contenga ningún elemento. 
 
-### Estrategias para implementar la Búsqueda en Profundidad 
+### Estrategias para implementar la Búsqueda en Profundidad
 
 Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de hacerlo, las cuales se pueden categorizar según el orden en que se visitan los nodos o la dirección. Es por eso, que la Búsqueda en Profundidad es aplicable por medio de tres estrategias: in-orden (en medio), post-orden (después) y pre-orden (antes). 
 
@@ -137,7 +137,7 @@ Al recorrer todos los nodos de un grafo o árbol existen diferentes formas de ha
 * Es complemento del ordenamiento topologico de un grafo 
 
 
-### Ejemplo de Búsqueda en Profundidad 
+### Ejemplo de Búsqueda en Profundidad
 
 Para el ejemplo de búsqueda en profundidad se empleó un grafo compuesto de 5 nodos. Por lo que, primero se declara una pila de tamaño equivalente al número total de nodos de la estructura de datos. Después, se selecciona un nodo como punto de inicio, en este caso se eligió el nodo número 1. Luego, se marca como visitado el nodo 1 y este se coloca en la pila. 
 
