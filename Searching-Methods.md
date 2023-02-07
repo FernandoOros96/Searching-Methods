@@ -375,37 +375,93 @@ Si se utilizara matriz de adyacencia, el costo de buscar los vecinos de un nodo 
 -BFS funcionará relativamente mal en relación con el algoritmo de búsqueda primero en profundidad si el estado objetivo se encuentra en la parte inferior del árbol. BFS siempre encontrará la ruta más corta si el peso en los enlaces es uniforme.  
 - BFS necesita más memoria en comparación con DFS. 
  
- ### Referencias:
- 
- ALGORITMO DE BÚSQUEDA: BREADTH FIRST SEARCH. (2016, 3 November). Algorithms and More. https://jariasf.wordpress.com/2012/02/27/algoritmo-de-busqueda-breadth-first-search/ 
+## Ejemplo de BFS en Prolog.
 
-Búsqueda en amplitud (BFS): implementación iterativa y recursiva. (s. f.). https://www.techiedelight.com/es/breadth-first-search/
+Este codigo se mantiene en cualquier implementacion a realizar, ya que a partir de este se hace la busqueda en base a los arboles declarados 
 
-Cambal, H. (s. f.). Tipos de búsqueda en inteligencia artificial. https://es.slideshare.net/hendavidcambarahona/tipos-de-bsqueda-24524005
+```pl
+% Implementation BFS
+bfs(Start, Objetive, Path) :-
+    bfs_search([[Start]], Objetive, Path).
 
-Difference between Breadth Search (BFS) and Deep Search (DFS). (2020, 25 May). Encora. https://www.encora.com/es/blog/dfs-vs-bfs
+bfs_search([[Objetive | Visited] | _], Objetive, [Objetive | Visited]) :-
+    writef("Objetive found: %w\n", [Objetive | Visited]).
+bfs_search([[Actual | Visited] | Queue], Objetive, Path) :-
+    writef("Actual node: %w\n", [[Actual | Visited]]),
+    findall([Child, Actual | Visited], (father(Actual, Child), \+ member(Child, Visited)), Childs),
+    append(Queue, Childs, NuevaQueue),
+    bfs_search(NuevaQueue, Objetive, Path).
+```
 
-Dr. Himani Mittal. (2021, June 25). depth first search in prolog [Video].
-YouTube. https://www.youtube.com/watch?v=t1vJYqoK3ec 
+La cláusula bfs(Start, Objetive, Path) es una interfaz o punto de entrada para el usuario que desea realizar una búsqueda en anchura. El cuerpo de la cláusula simplemente invoca a la cláusula bfs_search([[Start]], Objetive, Path). con una lista que contiene una lista con el nodo de inicio como único elemento, y los argumentos Objetive y Path.
 
-Depth First Search Algorithm Prolog. (2014, November 21). Stack Overflow. https://stackoverflow.com/questions/27065774/depth-first-search-algorithm-prolog 
+En otras palabras,  bfs(Start, Objetive, Path) es una cláusula de envoltorio que se utiliza para invocar bfs_search([[Start]], Objetive, Path) con los argumentos correctos, proporcionando una forma más fácil y clara para el usuario de llamar a la búsqueda en anchura.
 
-GeeksforGeeks. (2023, 27 January). Applications of Breadth First Traversal. https://www.geeksforgeeks.org/applications-of-breadth-first-traversal/
+La cláusula bfs_search([[Objetive | Visited] | _], Objetive, [Objetive | Visited]) es la cláusula principal que implementa la búsqueda en anchura. El primer argumento es la cola de búsqueda, que es una lista de listas que representa los nodos que aún deben ser visitados.
 
-algoritmos-oia:grafos:dfs [OIA-Wiki]. (s. f.). http://wiki.oia.unsam.edu.ar/algoritmos-oia/grafos/dfs 
+El cuerpo de la cláusula compara el primer elemento de la primera lista en la cola con el objetivo, y si son iguales, significa que se ha encontrado el objetivo. En este caso, el camino al objetivo se construye a partir de la primera lista, y se escribe un mensaje indicando que se ha encontrado el objetivo.
 
-GeeksforGeeks. (2023, 6 February). Graph Data Structure And Algorithms. https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/ 
+La cláusula es una condición de terminación para la búsqueda en anchura. Si se encuentra el objetivo, la cláusula devuelve el camino como tercer argumento, y la búsqueda termina. De lo contrario, la búsqueda continúa hasta que se agote la cola o se encuentre el objetivo.
 
-algoritmos-oia:grafos:bfs [OIA-Wiki]. (s. f.). http://wiki.oia.unsam.edu.ar/algoritmos-oia/grafos/bfs?s[]=bfs 
+La cláusula bfs_search/3 es la cláusula principal que implementa la búsqueda en anchura. El primer argumento es la cola de búsqueda, que es una lista de listas que representa los nodos que aún deben ser visitados.
 
-Ravikiran, A. (2022, October 27). Your One-Stop Solution to Learn Depth-First Search(DFS) Algorithm From Scratch. simplilearn. https://www.simplilearn.com/tutorials/data-structure-tutorial/dfs-algorithm
+El cuerpo de la cláusula primero escribe un mensaje que indica el nodo actual que se está visitando. Luego, usa la función findall/3 para encontrar todos los hijos del nodo actual que no han sido visitados antes, y los agrega a la cola. Finalmente, llama recursivamente a bfs_search/3 con la nueva cola.
 
-baeldung. (2022, November 25). Methods of Depth First Traversal and Their Applications. https://www.baeldung.com/cs/depth-first-traversal-methods#:~:text=In%20this%20tutorial%2C%20we'll,to%20any%20type%20of%20graph. 
+Esta cláusula es el núcleo de la búsqueda en anchura, ya que proporciona la lógica para explorar los hijos de cada nodo y continuar la búsqueda hasta que se encuentre el objetivo o se agote la cola.
 
-tutorialspoint. (2023). Data Structure - Depth First Traversal. https://www.tutorialspoint.com/data_structures_algorithms/depth_first_traversal.htm
+Este es el primer arbol:
+<p align="center">
+  <img src="images/Picture1.png" width="750" height="579">
+</p>
+Su declaración en Prolog
 
-programiz. (n.d.). Depth First Search (DFS). https://www.programiz.com/dsa/graph-dfs
+```pl
+% Define relation father-Child
+father(66, 31).
+father(66, 79).
+father(31, 20).
+father(31, 51).
+father(79, 72).
+father(79, 80).
+father(20, 12).
+father(20, 24).
+father(51, 46).
+father(51, 60).
+father(80, 82).
+father(46, 48).
+```
+El resultado de la busqueda mas larga:
+<p align="center">
+  <img src="images/Picture2.png" width="393" height="497">
+</p>
+Este es el segundo arbol:
+<p align="center">
+  <img src="images/Picture3.png" width="526" height="454">
+</p>
+Su declaración en Prolog:
 
+```pl
+% Define relation father-Child
+father(72, 99).
+father(72, 51).
+father(99, 79).
+father(51, 31).
+father(79, 80).
+father(31, 46).
+father(31, 24).
+father(80, 85).
+father(24, 12).
+father(85, 83).
+father(12, 20).
+father(83, 84).
+father(83, 82).
+```
+
+El resultado de la busqueda mas larga:
+
+<p align="center">
+  <img src="images/Picture4.png" width="410" height="426">
+</p>
 
 
 
