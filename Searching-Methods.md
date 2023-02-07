@@ -14,7 +14,7 @@
     - [Características de la Búsqueda en Amplitud](#Características)
     - [Proceso para implementar la Búsqueda en Anchura](#Proceso-para-implementar-la-Búsqueda en-Anchura)
     - [Aplicaciones del Algoritmo BFS](#Aplicaciones-del-Algoritmo-BFS)
-    - [### Ejemplo Búsqueda en Amplitud o Anchura](#Ejemplo-Búsqueda-en-Amplitud-o-Anchura)
+    - [Ejemplo Búsqueda en Amplitud o Anchura](#Ejemplo-Búsqueda-en-Amplitud-o-Anchura)
 - [Referencias](#referencias)
 
 ## Búsqueda no informada
