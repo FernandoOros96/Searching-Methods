@@ -15,6 +15,10 @@
     - [Proceso para implementar la Búsqueda en Anchura](#Proceso-para-implementar-la-Búsqueda-en-Anchura)
     - [Aplicaciones del Algoritmo BFS](#Aplicaciones-del-Algoritmo-BFS)
     - [Ejemplo Búsqueda en Amplitud o Anchura](#Ejemplo-Búsqueda-en-Amplitud-o-Anchura)
+- [Ejemplo de DFS en Prolog](#Ejemplo-de-DFS-en-Prolog)
+- [Complejidad de DFS](#Complejidad)
+- [Ventajas de DFS](#Ventajas)
+- [Desventajas de DFS](#Desventajas)
 - [Referencias](#referencias)
 
 ## Búsqueda no informada
@@ -263,7 +267,7 @@ De igual forma en esta imagen continuamos con el mismo proceso que el anterior, 
 Por último, en esta imagen observamos que nuestro algoritmo termina de verificar que efectivamente tomo el camino optimo y correcto. Ya que la lista queda vacía y obtuvo el mismo recorrido y llego al nodo que estaba buscando. Otro punto importante a destacar es la confirmación de que efecto a pesar de que los nodos puedan tener hijos no es necesario recorrerlos a todos para encontrar el mejor camino.  
 
 
-## Ejemplo de DFS en Prolog.
+## Ejemplo de DFS en Prolog
 
 <p align="center">
   <img src="images/dfs1.png" width="500" height="200">
@@ -345,7 +349,7 @@ Se creó otro ejemplo en prolog con dos goal nodes f y j, siguiente el mismo pas
 ### Búsqueda en profundidad (DFS) 
 * Poner en cola nodos en nodos en orden LIFO (último en entrar, primero en salir). Es decir, nodos utilizados como estructura de datos de pila para ordenar nodos. 
 * No puede terminar sin un "límite de profundidad", es decir, cortar la búsqueda por debajo de una profundidad fija D ("búsqueda de profundidad limitada") 
-*Tiempo exponencial, O(bd), pero solo espacio lineal, O(bd) 
+* Tiempo exponencial, O(bd), pero solo espacio lineal, O(bd) 
  
 ### Complejidad 
 Se ve que cada vértice se lo mira a lo sumo una vez, y en una visita al nodo se lo agrega/saca de la pila, y se hacen operaciones de tiempo constante, por lo que tenemos O(V) tiempo para los vértices. Además, cada arista se ve también a lo sumo una vez, tomando O(E) tiempo. En total, la complejidad temporal es O(V+E), que en términos de grafos es óptimo.  
