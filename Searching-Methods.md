@@ -319,10 +319,10 @@ Se creó otro ejemplo en prolog con dos goal nodes f y j, siguiente el mismo pas
   <img src="images/sol2.png" width="600" height="100">
 </p>
 
-### Primero en profundidad (DFS) 
-• Poner en cola nodos en nodos en orden LIFO (último en entrar, primero en salir). Es decir, nodos utilizados como estructura de datos de pila para ordenar nodos. 
-• No puede terminar sin un "límite de profundidad", es decir, cortar la búsqueda por debajo de una profundidad fija D ("búsqueda de profundidad limitada") 
-•Tiempo exponencial, O(bd), pero solo espacio lineal, O(bd) 
+### Búsqueda en profundidad (DFS) 
+* Poner en cola nodos en nodos en orden LIFO (último en entrar, primero en salir). Es decir, nodos utilizados como estructura de datos de pila para ordenar nodos. 
+* No puede terminar sin un "límite de profundidad", es decir, cortar la búsqueda por debajo de una profundidad fija D ("búsqueda de profundidad limitada") 
+*Tiempo exponencial, O(bd), pero solo espacio lineal, O(bd) 
  
 ### Complejidad 
 Se ve que cada vértice se lo mira a lo sumo una vez, y en una visita al nodo se lo agrega/saca de la pila, y se hacen operaciones de tiempo constante, por lo que tenemos O(V) tiempo para los vértices. Además, cada arista se ve también a lo sumo una vez, tomando O(E) tiempo. En total, la complejidad temporal es O(V+E), que en términos de grafos es óptimo.  
