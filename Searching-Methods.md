@@ -431,12 +431,14 @@ father(80, 82).
 father(46, 48).
 ```
 El resultado de la busqueda mas larga:
+
 <p align="center">
-  <img src="images/Picture2.png" width="393" height="497">
+  <img src="images/Picture4.png" width="410" height="426">
 </p>
 Este es el segundo arbol:
+
 <p align="center">
-  <img src="images/Picture3.png" width="526" height="454">
+  <img src="images/Picture2.png" width="393" height="497">
 </p>
 Su declaración en Prolog:
 
@@ -458,10 +460,10 @@ father(83, 82).
 ```
 
 El resultado de la busqueda mas larga:
-
 <p align="center">
-  <img src="images/Picture4.png" width="410" height="426">
+  <img src="images/Picture3.png" width="526" height="454">
 </p>
+
 
 
 
