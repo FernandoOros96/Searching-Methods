@@ -11,7 +11,7 @@
     - [Aplicaciones de la Búsqueda en Profundidad](#Aplicaciones-de-la-Búsqueda-en-Profundidad)
     - [Ejemplo de Búsqueda en Profundidad](#Ejemplo-de-Búsqueda-en-Profundidad)
 - [Búsqueda en Amplitud o Anchura (BFS)](#Búsqueda-en-Amplitud-o-Anchura)
-    - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
+    - [Características de la Búsqueda en Amplitud](#Características)
     - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
     - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
 - [Referencias](#referencias)
@@ -178,7 +178,7 @@ Es un algoritmo con el que recorremos y/o buscamos elementos de un grafo. La bú
 
 ### Características 
 
-### Proceso para implementar la Búsqueda en Profundidad 
+### Proceso para implementar la Búsqueda en Anchura
 <p align="center">
   <img src="images/bfs-gif.gif" width="400" height="300">
 </p>
