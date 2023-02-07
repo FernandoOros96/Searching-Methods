@@ -10,7 +10,7 @@
     - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
     - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
     - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
-- [Búsqueda en Amplitud o Anchura](#Búsqueda-en-Amplitud-o-Anchura-(BFS))
+- [Búsqueda en Amplitud o Anchura (BFS)](#Búsqueda-en-Amplitud-o-Anchura)
     - [Paso 1. Instalar Visual Studio Code](#paso-1-instalar-visual-studio-code)
     - [Paso 2. Agregar swipl a las variables de entorno](#paso-2-.-agregar-swipl-a-las-variables-de-entorno)
     - [Paso 3. Instalar extensión de Prolog](#paso-3-instalar-extensión-de-prolog)
@@ -169,7 +169,7 @@ De manera que, se continúan extrayendo elementos de la pila hasta que esta est�
   <img src="images/p5.png"  width="450" height="270">
 </p>
 
-## Búsqueda en Amplitud o Anchura (BFS) 
+## Búsqueda en Amplitud o Anchura
 <p align="center">
   <img src="images/Breadth-First-Search-Algorithm.gif" width="400" height="300">
 </p>
