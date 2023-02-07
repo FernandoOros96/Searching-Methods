@@ -3,7 +3,7 @@
 ## Contenido
 
 - [Búsqueda no informada](#Búsqueda-no-informada)
-    - [Algoritmos no informados vs informados](#Algoritmos-no-informados-vs-informadose)
+    - [Algoritmos no informados vs informados](#Algoritmos-no-informados-vs-informados)
 - [Búsqueda en profundidad (DFS)](#Búsqueda-en-Profundidad)
     - [Características de la Búsqueda en Profundidad](#Características-de-la-Búsqueda-en-Profundidad)
     - [Proceso para implementar la Búsqueda en Profundidad](#Proceso-para-implementar-la-Búsqueda-en-Profundidad)
